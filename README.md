@@ -14,7 +14,7 @@ In reviewing the returned data for both years, we're able ascertain that 2017 wa
 While most stocks daily volumes and return decreased in 2018, I found it interesting that the daily volumes for DQ nearly tripled in 2018 over 2017 yet the return dropped significantly. In comparison, the daily volumes for RUN nearly doubled in 2018 and the return significantly increased. 
 
 ![2017 Results](https://github.com/LauraZJ/Stock-Analysis/blob/main/Resources/2018_Results.png)
-![2018 Results](https://github.com/LauraZJ/Stock-Analysis/blob/main/Resources/2018_results.png)
+![2018 Results](https://github.com/LauraZJ/Stock-Analysis/blob/main/Resources/2018_Results.png)
 
 #### How it was done
 We used VBA code to identify each individual stock (ticker) and then using that information, loop through the rows to identify both the starting and ending values which were used to calculate the total daily volumes and return.
