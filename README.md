@@ -13,8 +13,8 @@ As part of the project we were asked to refactor the initial code we created dur
 In reviewing the returned data for both years, we're able ascertain that 2017 was a much better year for energy related companies in the stock market (if we assume that the performance of this set of stocks are representative of the overall market) than 2018.  In most cases, both the total daily volume and the return are down.
 While most stocks daily volumes and return decreased in 2018, I found it interesting that the daily volumes for DQ nearly tripled in 2018 over 2017 yet the return dropped significantly. In comparison, the daily volumes for RUN nearly doubled in 2018 and the return significantly increased. 
 
-![2017 Results](https://github.com/LauraZJ/Stock-Analysis/blob/main/2017_results.png)
-![2018 Results](https://github.com/LauraZJ/Stock-Analysis/blob/main/2018_results.png)
+![2017 Results](https://github.com/LauraZJ/Stock-Analysis/blob/main/Resources/2017_results.png)
+![2018 Results](https://github.com/LauraZJ/Stock-Analysis/blob/main/Resources/2018_results.png)
 
 #### How it was done
 We used VBA code to identify each individual stock (ticker) and then using that information, loop through the rows to identify both the starting and ending values which were used to calculate the total daily volumes and return.
@@ -131,11 +131,11 @@ Refactoring this code resulted in about an 85% reduction in the amount of time i
 |Original    | 1.089344 seconds  | 1.085938 seconds  |
 |Refactored  | 0.1445313 seconds | 0.15625 seconds   |   
 
-![2017 original run time](https://github.com/LauraZJ/Stock-Analysis/blob/main/Original_code_2017_runtime.png)
-![2018 original run time](https://github.com/LauraZJ/Stock-Analysis/blob/main/2018_original_run_time.png)
+![2017 original run time](https://github.com/LauraZJ/Stock-Analysis/blob/main/Resources/Original_code_2017_runtime.png)
+![2018 original run time](https://github.com/LauraZJ/Stock-Analysis/blob/main/Resources/2018_original_run_time.png)
 
-![VBA_Challenge_2017](https://github.com/LauraZJ/Stock-Analysis/blob/main/VBA_Challenge_2017.png)
-![VBA_Challenge_2018](https://github.com/LauraZJ/Stock-Analysis/blob/main/VBA_Challenge_2018.png)
+![2017 refactored run time](https://github.com/LauraZJ/Stock-Analysis/blob/main/Resources/2017RunTime.png)
+![2018 refactored run time](https://github.com/LauraZJ/Stock-Analysis/blob/main/Resources/2018RunTime.png)
 
 
 ## Summary
