@@ -1,24 +1,26 @@
 # Stock-Analysis
+
 ## Overview:
 This project used VBA within Excel to analyze the performance of 12 stocks in 2017 and 2018.
 
-## Purpose
+### Purpose
 The purpose of this project is to write VBA code (within an Excel file) that would, for each stock, calculate the starting and ending prices and then calculate the daily return for both 2017 and 2018.
 As part of the project we were asked to refactor the initial code we created during the module exercise.  
 
-# Results
-'Using images and examples of your code, compare the stock performance between 2017 and 2018, as well as the execution times of the original script and the refactored script
-## Data Analysis
+## Results
+
+### Data Analysis
 In reviewing the returned data for both years, we're able ascertain that 2017 was a much better year for energy related companies in the stock market (if we assume that the performance of this set of stocks are representative of the overall market) than 2018.  In most cases, both the total daily volume and the return are down.
 While most stocks daily volumes and return decreased in 2018, I found it interesting that the daily volumes for DQ nearly tripled in 2018 over 2017 yet the return dropped significantly. In comparison, the daily volumes for RUN nearly doubled in 2018 and the return significantly increased. 
 
 ![2017 Results](https://github.com/LauraZJ/Stock-Analysis/blob/main/2017_results.png)
 ![2018 Results](https://github.com/LauraZJ/Stock-Analysis/blob/main/2018_results.png)
 
-## How it was done
+#### How it was done
 We used VBA code to identify each individual stock (ticker) and then using that information, loop through the rows to identify both the starting and ending values which were used to calculate the total daily volumes and return.
-### Original Code
+##### Original Code
 The original code resulted used a nested for loop and if/then statements that went through each ticker, each row, returned the output for that row and then went to the next ticker.
+
  '4) Loop through tickers
     For i = 0 To 11
         ticker = tickers(i)
@@ -59,8 +61,9 @@ The original code resulted used a nested for loop and if/then statements that we
     
     Next i
 
-### Refactored code
+##### Refactored code
 The refactored code used an index to eliminate the nested for loop, used one for loop and several if/then statements to run the function for each ticker than ran another for loop to return the outcome.
+
     '1a) Create a ticker Index
        Dim tickerIndex As Integer
        
@@ -121,7 +124,7 @@ The refactored code used an index to eliminate the nested for loop, used one for
 
 
  
-### VBA Refactoring Impact
+#### VBA Refactoring Impact
 Refactoring this code resulted in about an 85% reduction in the amount of time it took for the code to run (as seen below).
 |   Code     |       2017        |       2018        |
 |------------|-------------------|-------------------|
@@ -135,22 +138,22 @@ Refactoring this code resulted in about an 85% reduction in the amount of time i
 ![2018 refactored run time](https://github.com/LauraZJ/Stock-Analysis/blob/main/2018RunTime.png)
 
 
-# Summary
+## Summary
 
-## Advantages / Disadvantages of refactoring code:
-### Advantages
+### 1. Advantages / Disadvantages of refactoring code:
+#### Advantages
 - Refactoring code can reduce the runtime to perform the task
 - Refactoring can shorten the overall length (number of lines) of the code
 - Refactoring can make it easier for another person to step into the code (provided you have included appropriate comments)
 
-### Disadvantages
+#### Disadvantages
 - If you refactor without keeping an understanding of the ultimate desired outcome, you could be too restrictive in the code.  You can't just refractor with the current step in mind.  You have to prepare the code to perform from beginning to end.
 - Refactoring can make individual tasks more complex as single-action items.
 
  
-## 2. How do these pros and cons apply to refactoring the original VBA script?
-### Pros
+### 2. How do these pros and cons apply to refactoring the original VBA script?
+#### Pros
 The advantages of refractoring, in this case are the reduce run time and shortening the length of the code.  If another person were to step into this code, they should be able to follow the intended function of the code.
 
-### Cons
+#### Cons
 The complexity of some of the lines of code may be a con, especially for new coders.
