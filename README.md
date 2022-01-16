@@ -23,7 +23,7 @@ We used VBA code to identify each individual stock (ticker) and then using that 
 Refactoring this code resulted in about an 85% reduction in the amount of time it took for the code to run (as seen below).
 |   Code     |       2017        |       2018        |
 |------------|-------------------|-------------------|
-|Original    | 1.089844 seconds | 1.09375 seconds |
+|Original    | 1.109375 seconds | 1.085938 seconds |
 |Refactored  | 0.148438 seconds  | 0.15625 seconds   |   
 
 ![2017 original run time](https://github.com/LauraZJ/Stock-Analysis/blob/main/Original_code_2017_runtime.png)
