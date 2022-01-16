@@ -134,8 +134,8 @@ Refactoring this code resulted in about an 85% reduction in the amount of time i
 ![2017 original run time](https://github.com/LauraZJ/Stock-Analysis/blob/main/Resources/Original_code_2017_runtime.png)
 ![2018 original run time](https://github.com/LauraZJ/Stock-Analysis/blob/main/Resources/2018_original_run_time.png)
 
-![2017 refactored run time](https://github.com/LauraZJ/Stock-Analysis/blob/main/Resources/2017RunTime.png)
-![2018 refactored run time](https://github.com/LauraZJ/Stock-Analysis/blob/main/Resources/2018RunTime.png)
+![2017 refactored run time](https://github.com/LauraZJ/Stock-Analysis/blob/main/Resources/VBA_Challenge_2017.png)
+![2018 refactored run time](https://github.com/LauraZJ/Stock-Analysis/blob/main/Resources/VBA_Challenge_2018.png)
 
 
 ## Summary
